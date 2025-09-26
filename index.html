@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Netflix Clone</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">NETFLIX</div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">TV Shows</a></li>
+        <li><a href="#">Movies</a></li>
+        <li><a href="#">Recently Added</a></li>
+        <li><a href="#">My List</a></li>
+      </ul>
+    </nav>
+    <div class="right-nav">
+      <svg
+        class="icon"
+        viewBox="0 0 24 24"
+        fill="#fff"
+        xmlns="http://www.w3.org/2000/svg"
+        aria-label="Search"
+        role="img"
+      >
+        <path
+          d="M21 20l-5.6-5.6a7 7 0 10-1.4 1.4L20 21zM10 16a6 6 0 110-12 6 6 0 010 12z"
+        />
+      </svg>
+      <div class="user-icon" aria-label="User Profile" role="img"></div>
+    </div>
+  </header>
+
+  <!-- Hero with backdrop image -->
+  <section class="hero" role="banner" aria-label="Featured Movie">
+    <img
+      src="https://image.tmdb.org/t/p/original/x2LSRK2Cm7MZhjluni1msVJ3wDF.jpg"
+      alt="Stranger Things Banner"
+      class="hero-img"
+    />
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Stranger Things</h1>
+      <p>
+        When a young boy disappears, his mother, a police chief, and his friends
+        must confront terrifying supernatural forces to get him back.
+      </p>
+      <div class="btn-container">
+        <button class="btn btn-play" aria-label="Play Stranger Things">▶ Play</button>
+        <button class="btn btn-info" aria-label="More Info about Stranger Things">ℹ More Info</button>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <!-- Trending Now -->
+    <section class="row" aria-label="Trending Now">
+      <h2>Trending Now</h2>
+      <div class="row-posters">
+        <div class="poster">
+          <img src="https://image.tmdb.org/t/p/w500/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg" alt="Avengers Infinity War" loading="lazy" />
+          <p>Avengers: Infinity War</p>
+        </div>
+        <div class="poster">
+          <img src="https://image.tmdb.org/t/p/w500/9Gtg2DzBhmYamXBS1hKAhiwbBKS.jpg" alt="Doctor Strange" loading="lazy" />
+          <p>Doctor Strange</p>
+        </div>
+        <div class="poster">
+          <img src="https://image.tmdb.org/t/p/w500/dDlEmu3EZ0Pgg93K2SVNLCjCSvE.jpg" alt="Squid Game" loading="lazy" />
+          <p>Squid Game</p>
+        </div>
+        <div class="poster">
+          <img src="https://image.tmdb.org/t/p/w500/lHu1wtNaczFPGFDTrjCSzeLPTKN.jpg" alt="The Crown" loading="lazy" />
+          <p>The Crown</p>
+        </div>
+        <div class="poster">
+          <img src="https://image.tmdb.org/t/p/w500/x2LSRK2Cm7MZhjluni1msVJ3wDF.jpg" alt="Stranger Things" loading="lazy" />
+          <p>Stranger Things</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Netflix Originals -->
+    <section class="row" aria-label="Netflix Originals">
+      <h2>Netflix Originals</h2>
+      <div class="row-posters">
+        <div class="poster">
+          <img src="https://image.tmdb.org/t/p/w500/34OGjFEbHj0E3lE2w0iTUVq0CBz.jpg" alt="The Queen's Gambit" loading="lazy" />
+          <p>The Queen's Gambit</p>
+        </div>
+        <div class="poster">
+          <img src="https://wallpapers.com/images/high/dexter-mysterious-suspenseful-psychological-thriller-y8pfnwfgdszu3y2w.webp" alt="Dexter" loading="lazy" />
+          <p>Dexter</p>
+        </div>
+        <div class="poster">
+          <img src="https://wallpapercave.com/wp/wp3978152.jpg" alt="Game of Thrones" loading="lazy" />
+          <p>Game of Thrones</p>
+        </div>
+        <div class="poster">
+          <img src="https://imgs.search.brave.com/GSWvrz_RfuHFW71n9AUc9GVO5amtOSK96bMJe1_PPi0/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzb2suY29t/L2ltYWdlcy9maWxl/L3Byb2Zlc3Nvci1t/b25leS1oZWlzdC1u/ZXRmbGl4LXBvc3Rl/ci1waDNkMjRyeTZj/M3B5OGh1LmpwZw" alt="Money Heist" loading="lazy" />
+          <p>Money Heist</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Top Picks -->
+    <section class="row" aria-label="Top Picks for You">
+      <h2>Top Picks for You</h2>
+      <div class="row-posters">
+        <div class="poster">
+          <img src="https://image.tmdb.org/t/p/w500/ggFHVNu6YYI5L9pCfOacjizRGt.jpg" alt="Breaking Bad" loading="lazy" />
+          <p>Breaking Bad</p>
+        </div>
+        <div class="poster">
+          <img src="https://image.tmdb.org/t/p/w500/rTmal9fDbwh5F0waol2hq35U4ah.jpg" alt="Narcos" loading="lazy" />
+          <p>Narcos</p>
+        </div>
+        <div class="poster">
+          <img src="https://wallpapercave.com/wp/wp1817968.jpg" alt="Interstellar" loading="lazy" />
+          <p>Interstellar</p>
+        </div>
+        <div class="poster">
+          <img src="https://wallpapercave.com/wp/wp5575939.jpg" alt="Dark" loading="lazy" />
+          <p>Dark</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <nav aria-label="Footer Navigation">
+      <a href="#">FAQ</a> | <a href="#">Help Center</a> | <a href="#">Terms of Use</a> | 
+      <a href="#">Privacy</a> | <a href="#">Cookie Preferences</a> | 
+      <a href="#">Corporate Information</a>
+    </nav>
+    <p>© 2025 Netflix Clone. All rights reserved.</p>
+  </footer>
+</body>
+</html>
